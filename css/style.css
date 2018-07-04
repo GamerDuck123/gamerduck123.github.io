@@ -18,9 +18,15 @@ body {
   line-height: 1.8;
   color: #777777;
   color: #7f7f7f;
-  background: #fff;
   height: 100%;
   position: relative;
+  !transition: background  1.5s;
+    
+  -webkit-transition: background 2s;
+  -moz-transition: background 2s;
+  -ms-transition: background 2s;
+  -o-transition: background 2s;
+  transition: background 2s;
 }
 
 a {
@@ -66,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   top: 0;
   margin-top: 20px;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-header {
@@ -79,7 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-header .navbar-brand {
     color: #FF847C !important;
 	
+	
   }
+  
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
@@ -106,6 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
+  position: sticky;
+  color: rgb(0, 255, 255); 
+  mix-blend-mode: difference;
 }
 #qbootstrap-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -119,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-header #navbar li a span:before {
   content: "";
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 2px;
   bottom: 0;
@@ -162,12 +177,13 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   display: block;
   font-size: 34px;
+  position: sticky;
   padding-left: 0;
   color: #fff;
   font-family: "Source Sans Pro",Helvetica,sans-serif;
 }
 #qbootstrap-header.navbar-fixed-top {
-  position: fixed !important;
+	
   background: #fff;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -205,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
+  mix-blend-mode: difference; 	
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-header .navbar-default {
