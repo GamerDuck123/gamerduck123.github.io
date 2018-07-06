@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Random Title</title>
+	<title>GamerDuck123</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -29,7 +29,8 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
-	
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -43,9 +44,8 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/skillbar.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -54,6 +54,14 @@
 	<![endif]-->
 
 	</head>
+	<script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Animation script-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<body>
 	<header role="banner" id="qbootstrap-header">
 		<div class="container">
@@ -68,7 +76,7 @@
 	          <ul class="nav navbar-nav navbar-right">
 	            <li class="active"><a href="#" data-nav-section="home"><span>HOME</span></a></li>
 	            <li><a href="#" data-nav-section="about"><span>ABOUT</span></a></li>
-	            <li><a href="#" data-nav-section="portfolio"><span>PORTFOLIO</span></a></li>
+	            <li><a href="#" data-nav-section="works"><span>MY WORKS</span></a></li>
 	            <li><a href="#" data-nav-section="contact"><span>CONTACT</span></a></li>
 	          </ul>
 	        </div>
@@ -77,7 +85,7 @@
 	  </div>
 	</header>
 	
-	<div class="div1" data-section="home">
+	<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
 		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(img/download.png);">
 			<div class="display-t">
@@ -95,37 +103,95 @@
 		</div>
 	</div>
 
-	<div id="div2" data-section="about">
+	<div id="qbootstrap-about" data-section="about">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
 						<h2>About</h2>
-						<p>Hi the name is _______ I am from ______ and I love to _______ I am a ______ (You see the idea here?) </p>
+						<h3>Hello! my name is Garrett, or more commonly known as GamerDuck123! I am a cheap (and sometimes free) spigot developer! But many do not know that I
+						do a lot of other things, like discord bots, and frontend development!</h3>
+			<div id="skills" data-aos="fade-up">
+            <div class="skillbar clearfix" data-percent="75%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>HTML5</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">75%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">50%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>Java</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>JavaScript</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">50%</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>Plugins</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div> <!-- End Skill Bar -->
+        </div>
 					</div>
 				</div>
 			</div>
+		<div id="skills" data-aos="fade-up">
+          
 
-	<div id="div3" data-section="portfolio">
+	<div id="qbootstrap-portfolio" data-section="works">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-12 text-center section-heading svg-sm-2">
-						<h2>Insert Some Type of Portfolio Here</h2>
+					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
+						<h2> Minecraft Plugins </h2>
+						<h3><a class ="main" href="spigotmc.org"> SpigotMC Plugins </a></h3>
+						<h3><a class ="main" href="mcmart.org"> MCMart Plugins </a></h3>
+						<h3><a class ="main" href="mc-market.com"> MC-Market Plugins </a></h3>
+						<h2>Discord Bots</h2>
+						<h3><a class ="main" href="#">WIP :(</a></h3>
+						<h2>Websites</h2>
+						<h3><a class ="main" href="#">My Portfolio (Of Course)</a></h3>
+						<h3><a class ="main" href="http://jaironetwork.us">Jairo Network</a></h3>
+						<h3><a class ="main" href="https://jairodevelopment.us">Jairo Development</a></h3>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-
-	
 	<div id="qbootstrap-contact" data-section="contact">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<h2>Insert some kind of contact method here</h2>
+						<center> <div class="container1">
+						<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Website: <input type="text" name="website" value="<?php echo $website;?>">
+  <span class="error"><?php echo $websiteErr;?></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+  <span class="error">* <?php echo $genderErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+</div></center>
 					</div>
 					</div>
 					</div>
@@ -176,6 +242,97 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+ <script>
+            
+                    //scroll animation    
+                    AOS.init({
+                        duration: 1200,
+                    })
 
+                    
+                    // skillbar animation
+                    jQuery(document).ready(function(){
+                        jQuery('.skillbar').each(function(){
+                            jQuery(this).find('.skillbar-bar').animate({
+                                width:jQuery(this).attr('data-percent')
+                            },6000);
+                        });
+                    });
+            
+
+
+
+      
+      
+      </script>
 	</body>
+	<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+    
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+      $websiteErr = "Invalid URL"; 
+    }
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
 </html>
